@@ -1,8 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 
 const Header = () => {
-	return <div>Header</div>;
+	return (
+		<View>
+			<Text>Header</Text>
+		</View>
+	);
 };
 
 export default Header;
