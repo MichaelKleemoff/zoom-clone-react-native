@@ -8,14 +8,10 @@ import ContactsMenu from '../components/ContactsMenu';
 const Home = () => {
 	return (
 		<View style={styles.container}>
-			<SafeAreaView>
-				{/* Header */}
+			<SafeAreaView style={{ height: '100%' }}>
 				<Header />
-				{/* Search Bar */}
 				<SearchBar />
-				{/* Menu Buttons */}
 				<MenuButtons />
-				{/* Contacts Menu */}
 				<ContactsMenu />
 			</SafeAreaView>
 		</View>
@@ -25,5 +21,8 @@ const Home = () => {
 export default Home;
 
 const styles = StyleSheet.create({
-	container: {},
+	container: {
+		backgroundColor: '#1c1c1c',
+		padding: 15,
+	},
 });
