@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 
 const Home = () => {
-	return <View>Home</View>;
+	return <View></View>;
 };
 
 export default Home;
