@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 const SearchBar = () => {
 	return (
 		<View>
-			<Text>SearchBar</Text>
+			<Text>Search Bar</Text>
 		</View>
 	);
 };
