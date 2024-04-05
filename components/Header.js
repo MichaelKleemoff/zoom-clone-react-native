@@ -15,7 +15,13 @@ const Header = () => {
 export default Header;
 
 const styles = StyleSheet.create({
-	container: {},
+	container: {
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+		alignItems: 'center',
+		paddingVertical: 20,
+		paddingHorizontal: 10,
+	},
 	heading: {
 		color: '#efefef',
 		fontSize: 20,
