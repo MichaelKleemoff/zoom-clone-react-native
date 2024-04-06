@@ -5,11 +5,22 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 const conctactsMenuButtons = [
 	{
 		type: 'starred',
+		name: 'Starred',
 	},
 	{
 		type: 'contact',
 		name: 'Michael Kleemoff',
 		photo: require('../assets/michael-profile-pic.jpeg'),
+	},
+	{
+		type: 'contact',
+		name: 'Aisha Kleemoff',
+		photo: require('../assets/aisha-profile-pic.jpeg'),
+	},
+	{
+		type: 'contact',
+		name: 'Silis Kleemoff',
+		photo: require('../assets/silis-profile-pic.jpeg'),
 	},
 ];
 
@@ -28,7 +39,7 @@ const ContactsMenu = () => {
 						<Image source={contact.photo} style={styles.image} />
 					)}
 					{/* Text */}
-					<Text style={styles.text}>Starred</Text>
+					<Text style={styles.text}>{contact.name}</Text>
 				</View>
 			))}
 		</View>
