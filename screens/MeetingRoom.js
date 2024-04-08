@@ -42,5 +42,8 @@ const styles = StyleSheet.create({
 		padding: 12,
 		justifyContent: 'center',
 	},
-	textInput: {},
+	textInput: {
+		color: '#fff',
+		fontSize: 18,
+	},
 });
