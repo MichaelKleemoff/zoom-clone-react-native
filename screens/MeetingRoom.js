@@ -5,7 +5,7 @@ const MeetingRoom = () => {
 	const [name, setName] = useState('');
 
 	return (
-		<View>
+		<View style={styles.container}>
 			<View style={styles.startMeetingContainer}>
 				<View style={styles.info}>
 					<TextInput
@@ -25,7 +25,10 @@ const MeetingRoom = () => {
 export default MeetingRoom;
 
 const styles = StyleSheet.create({
-	container: {},
+	container: {
+		backgroundColor: '#1c1c1c',
+		flex: 1,
+	},
 	startMeetingContainer: {},
 	info: {},
 	textInput: {},
