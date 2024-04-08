@@ -1,4 +1,10 @@
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import {
+	StyleSheet,
+	Text,
+	TextInput,
+	TouchableOpacity,
+	View,
+} from 'react-native';
 import React, { useState } from 'react';
 
 const MeetingRoom = () => {
@@ -7,6 +13,7 @@ const MeetingRoom = () => {
 
 	return (
 		<View style={styles.container}>
+			{/* Start Meeting Section */}
 			<View style={styles.startMeetingContainer}>
 				<View style={styles.info}>
 					<TextInput
@@ -25,6 +32,11 @@ const MeetingRoom = () => {
 						placeholderTextColor='#767476'
 						onChangeText={(text) => setRoomId(text)}
 					/>
+				</View>
+				<View>
+					<TouchableOpacity
+						style={styles.startMeetingButton}
+					></TouchableOpacity>
 				</View>
 			</View>
 		</View>
@@ -53,4 +65,5 @@ const styles = StyleSheet.create({
 		color: '#fff',
 		fontSize: 18,
 	},
+	startMeetingButton: {},
 });
