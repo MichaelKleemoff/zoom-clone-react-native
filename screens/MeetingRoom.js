@@ -30,6 +30,14 @@ const styles = StyleSheet.create({
 		flex: 1,
 	},
 	startMeetingContainer: {},
-	info: {},
+	info: {
+		width: '100%',
+		height: 50,
+		backgroundColor: '#373538',
+		borderTopWidth: 1,
+		borderBottomWidth: 1,
+		borderColor: '#484648',
+		padding: 12,
+	},
 	textInput: {},
 });
