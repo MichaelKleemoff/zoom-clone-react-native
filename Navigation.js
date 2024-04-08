@@ -24,6 +24,7 @@ const Navigation = () => {
 						title: 'Start a Meeting',
 						headerStyle: {
 							backgroundColor: '#1c1c1c',
+							shadowOpacity: 0,
 						},
 						headerTintColor: '#fff',
 					}}
