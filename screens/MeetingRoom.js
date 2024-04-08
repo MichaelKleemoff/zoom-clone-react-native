@@ -11,6 +11,8 @@ const MeetingRoom = () => {
 					<TextInput
 						style={styles.textInput}
 						value={name}
+						placeholder='Enter name'
+						placeholderTextColor='#767476'
 						onChangeText={(text) => setName(text)}
 					/>
 				</View>
@@ -38,6 +40,7 @@ const styles = StyleSheet.create({
 		borderBottomWidth: 1,
 		borderColor: '#484648',
 		padding: 12,
+		justifyContent: 'center',
 	},
 	textInput: {},
 });
