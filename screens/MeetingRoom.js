@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 const MeetingRoom = () => {
 	const [name, setName] = useState('');
+	const [roomId, setRoomId] = useState();
 
 	return (
 		<View style={styles.container}>
@@ -17,7 +18,13 @@ const MeetingRoom = () => {
 					/>
 				</View>
 				<View style={styles.info}>
-					<TextInput style={styles.textInput} />
+					<TextInput
+						style={styles.textInput}
+						value={roomId}
+						placeholder='Enter room id'
+						placeholderTextColor='#767476'
+						onChangeText={(text) => setRoomId(text)}
+					/>
 				</View>
 			</View>
 		</View>
